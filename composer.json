@@ -1,5 +1,5 @@
 {
-    "name": "josipjelic/domain",
+    "name": "josipjelic/msgphp-domain",
     "type": "library",
     "description": "A dependency-free package to help building a business domain layer",
     "keywords": [
