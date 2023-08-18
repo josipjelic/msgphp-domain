@@ -1,0 +1,54 @@
+{
+    "name": "msgphp/domain",
+    "type": "library",
+    "description": "A dependency-free package to help building a business domain layer",
+    "keywords": [
+        "domain-driven-design",
+        "ddd",
+        "domain model",
+        "rich domain model",
+        "entity",
+        "repository",
+        "orm",
+        "event sourcing",
+        "es",
+        "command query responsibility segregation",
+        "cqrs"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roland Franssen",
+            "email": "franssen.roland@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "doctrine/orm": "^2.6",
+        "ramsey/uuid": "^3.7",
+        "symfony/messenger": "^4.4 || ^5.0",
+        "symfony/var-exporter": "^4.4 || ^5.0"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.15-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MsgPhp\\Domain\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
